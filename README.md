@@ -1,2 +1,2 @@
-# calcolatrice in   PYTHON
-## top calcolatrice d'italia
+# calcolatrice in PYTHON
+## top calcolatrice d'Italia
