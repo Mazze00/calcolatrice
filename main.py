@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
 
-def main():
-    print("Hello world")
-    nome = input("come ti chiami? \n")
-    print("ciao, " + nome)
-    if (nome == "davide"):
-        print("bentornato")
-    else:
-        print("non ti conosco")
-        
+num1 = float(input("Inserisci il primo numero: "))
+num2 = float(input("Inserisci il secondo numero: "))
 
-# Execute
-if __name__ == '__main__':
-    main()
+scelta = input("Scegli l'operazione (+, -, *, /): ")
+
+if scelta == '+':
+    risultato = num1 + num2
+elif scelta == '-':
+    risultato = num1 - num2
+elif scelta == '*':
+    risultato = num1 * num2
+elif scelta == '/':
+    if num2 == 0:
+        risultato = "Impossibile dividere per zero"
+    else:
+        risultato = num1 / num2
+else:
+    risultato = "Operazione non valida"
+
+print("Risultato:", risultato)
